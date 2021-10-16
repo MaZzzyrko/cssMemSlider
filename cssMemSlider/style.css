@@ -117,3 +117,57 @@ body {
     height: 100%;
     object-fit: fill;
 }
+
+.slider-controls label span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+.wrapper-text {
+    width: 75%;
+    overflow: hidden;
+}
+
+.text-list {
+    font-size: 25px;
+    display: flex;
+    color: #FFFFFF;
+    width: 400%;
+    transition: transform 0.8s ease;
+}
+
+.text {
+    display: flex;
+    width: 750px;
+    align-items: center;
+}
+
+.text:hover {
+    color: burlywood;
+    transition: all 0.8s ease;
+    font-size: 30px;
+}
+
+.slider-controls label {
+    padding: 0 5px;
+    cursor: pointer;
+    display: block;
+    padding: 0.7em; 
+}
+
+
+.slider-controls {
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.slider-controls label span:hover {
+    background-color: #FFFFFF;
+}
