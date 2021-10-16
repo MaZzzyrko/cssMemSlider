@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+body {
+  margin: 0 auto;
+}
+
+
+#button-1:checked~.text-main .slider-controls label[for="button-1"] span,
+#button-2:checked~.text-main .slider-controls label[for="button-2"] span,
+#button-3:checked~.text-main .slider-controls label[for="button-3"] span,
+#button-4:checked~.text-main .slider-controls label[for="button-4"] span {
+  background-color: blanchedalmond;
+}
+
+
+#button-1:checked~.slider-wrapper .the-slider,
+#button-1:checked~.text-main .wrapper-text .text-list {
+  transform: translate(0);
+}
+
+#button-2:checked~.slider-wrapper .the-slider,
+#button-2:checked~.text-main .wrapper-text .text-list {
+  transform: translate(-21%);
+}
+
+#button-3:checked~.slider-wrapper .the-slider,
+#button-3:checked~.text-main .wrapper-text .text-list {
+  transform: translate(-41%);
+  
+}
+
+#button-4:checked~.slider-wrapper .the-slider,
+#button-4:checked~.text-main .wrapper-text .text-list {
+  transform: translate(-62%);
+}
+
+.item-list {
+    width: 54vw;
+}
+
+.item-list:nth-child(2) {
+    width: 55vw;
+}
+
+.item-list:nth-child(3) {
+    width: 1050px;
+}
+
+.item-list:nth-child(4) {
+    width: 1050px;
+}
+
+.text:nth-child(4) {
+    margin-left: -200px;
+}
+
+.wrapper-container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.memes-section {
+    background: url(assets/back.jpg);
+    background-size: cover;
+}
+
+.wrapper {
+    width: 70%;
+    margin-left: 220px;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.mem_input {
+    display: none;
+}
+
+.the-slider {
+    display: flex;
+    width: 500%;
+    height: 718px;
+    transition: transform 0.6s ease;
+}
+  
+.text-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    background-color: darkslategray;
+}
+
+.slider-wrapper {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
