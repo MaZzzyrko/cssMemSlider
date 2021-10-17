@@ -99,7 +99,6 @@ body {
   
 .text-main {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 10%;
     background-color: darkslategray;
@@ -134,6 +133,7 @@ body {
 
 .text-list {
     font-size: 25px;
+    cursor: pointer;
     display: flex;
     color: #FFFFFF;
     width: 400%;
@@ -170,4 +170,90 @@ body {
 
 .slider-controls label span:hover {
     background-color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 420px) {
+    * {
+        overflow: hidden;
+    }
+    body {
+        height: 1900px;
+    }
+    .wrapper {
+        margin-left: -15px;
+        padding-right: 15px;
+        padding-left: 40px;
+    }
+    .memes-section {
+        width: 600px;
+    }
+    .item-list:first-child {
+        width: 330px;
+    }
+    .item-list:nth-child(2) {
+        width: 350px;
+    }
+    
+    .item-list:nth-child(3) {
+        width: 350px;
+    }
+    
+    .item-list:nth-child(4) {
+        width: 350px;
+    }
+    
+    #button-1:checked~.slider-wrapper .the-slider,
+    #button-1:checked~.text-main .wrapper-text .text-list {
+        transform: translate(0);
+    }
+
+    #button-2:checked~.slider-wrapper .the-slider,
+    #button-2:checked~.text-main .wrapper-text .text-list {
+        transform: translate(-20%);
+    }
+
+    #button-3:checked~.slider-wrapper .the-slider,
+    #button-3:checked~.text-main .wrapper-text .text-list {
+         transform: translate(-40.5%);
+  
+    }
+
+    #button-4:checked~.slider-wrapper .the-slider,
+    #button-4:checked~.text-main .wrapper-text .text-list {
+         transform: translate(-61.5%);
+    }
+    .item-list {
+        width: 185vw;
+        height: 425px;
+    }
+    .text {
+        font-size: 20px;
+    }
+    
+    .text:hover {
+        color: burlywood;
+        transition: all 0.8s ease;
+        font-size: 25px;
+    }
+    .text-list {
+        width: 700%;
+    }
+    .slider-controls {
+        width: 160px;
+    }
+    .text:last-child {
+        margin-right: 50px;
+        transform: translate(-32%);
+    }
+    .text:nth-child(3) {
+        margin-right: 50px;
+        transform: translate(-58%);
+    }
+    .text:nth-child(2) {
+        margin-right: 50px;
+        transform: translate(-23%);
+    }
+
+
 }
