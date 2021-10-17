@@ -146,6 +146,19 @@ body {
     align-items: center;
 }
 
+.text:nth-child(2) {
+    transform: translate(-2%);
+}
+
+.text:nth-child(3) {
+    transform: translate(-18%);
+}
+
+.text:last-child {
+    transform: translate(-11%);
+}
+
+
 .text:hover {
     color: burlywood;
     transition: all 0.8s ease;
