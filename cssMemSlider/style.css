@@ -1,0 +1,272 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+body {
+  margin: 0 auto;
+}
+
+
+#button-1:checked~.text-main .slider-controls label[for="button-1"] span,
+#button-2:checked~.text-main .slider-controls label[for="button-2"] span,
+#button-3:checked~.text-main .slider-controls label[for="button-3"] span,
+#button-4:checked~.text-main .slider-controls label[for="button-4"] span {
+  background-color: blanchedalmond;
+}
+
+
+#button-1:checked~.slider-wrapper .the-slider,
+#button-1:checked~.text-main .wrapper-text .text-list {
+  transform: translate(0);
+}
+
+#button-2:checked~.slider-wrapper .the-slider,
+#button-2:checked~.text-main .wrapper-text .text-list {
+  transform: translate(-21%);
+}
+
+#button-3:checked~.slider-wrapper .the-slider,
+#button-3:checked~.text-main .wrapper-text .text-list {
+  transform: translate(-41%);
+  
+}
+
+#button-4:checked~.slider-wrapper .the-slider,
+#button-4:checked~.text-main .wrapper-text .text-list {
+  transform: translate(-62%);
+}
+
+.item-list {
+    width: 54vw;
+}
+
+.item-list:nth-child(2) {
+    width: 55vw;
+}
+
+.item-list:nth-child(3) {
+    width: 1050px;
+}
+
+.item-list:nth-child(4) {
+    width: 1050px;
+}
+
+.text:nth-child(4) {
+    margin-left: -200px;
+}
+
+.wrapper-container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.memes-section {
+    background: url(assets/back.jpg);
+    background-size: cover;
+}
+
+.wrapper {
+    width: 70%;
+    margin-left: 220px;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.mem_input {
+    display: none;
+}
+
+.the-slider {
+    display: flex;
+    width: 500%;
+    height: 718px;
+    transition: transform 0.6s ease;
+}
+  
+.text-main {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    background-color: darkslategray;
+}
+
+.slider-wrapper {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.slider-controls label span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+.wrapper-text {
+    width: 75%;
+    overflow: hidden;
+}
+
+.text-list {
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    color: #FFFFFF;
+    width: 400%;
+    transition: transform 0.8s ease;
+}
+
+.text {
+    display: flex;
+    width: 750px;
+    align-items: center;
+}
+
+.text:nth-child(2) {
+    transform: translate(-2%);
+}
+
+.text:nth-child(3) {
+    transform: translate(-18%);
+}
+
+.text:last-child {
+    transform: translate(-11%);
+}
+
+
+.text:hover {
+    color: burlywood;
+    transition: all 0.8s ease;
+    font-size: 30px;
+}
+
+.slider-controls label {
+    padding: 0 5px;
+    cursor: pointer;
+    display: block;
+    padding: 0.7em; 
+}
+
+
+.slider-controls {
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.slider-controls label span:hover {
+    background-color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 420px) {
+    * {
+        overflow: hidden;
+    }
+    body {
+        height: 1900px;
+    }
+    .wrapper {
+        margin-left: -15px;
+        padding-right: 15px;
+        padding-left: 40px;
+    }
+    .memes-section {
+        width: 600px;
+    }
+    .item-list:first-child {
+        width: 330px;
+    }
+    .item-list:nth-child(2) {
+        width: 350px;
+    }
+    
+    .item-list:nth-child(3) {
+        width: 350px;
+    }
+    
+    .item-list:nth-child(4) {
+        width: 350px;
+    }
+    
+    #button-1:checked~.slider-wrapper .the-slider,
+    #button-1:checked~.text-main .wrapper-text .text-list {
+        transform: translate(0);
+    }
+
+    #button-2:checked~.slider-wrapper .the-slider,
+    #button-2:checked~.text-main .wrapper-text .text-list {
+        transform: translate(-20%);
+    }
+
+    #button-3:checked~.slider-wrapper .the-slider,
+    #button-3:checked~.text-main .wrapper-text .text-list {
+         transform: translate(-40.5%);
+  
+    }
+
+    #button-4:checked~.slider-wrapper .the-slider,
+    #button-4:checked~.text-main .wrapper-text .text-list {
+         transform: translate(-61.5%);
+    }
+    .item-list {
+        width: 185vw;
+        height: 425px;
+    }
+    .text {
+        font-size: 20px;
+    }
+    
+    .text:hover {
+        color: burlywood;
+        transition: all 0.8s ease;
+        font-size: 25px;
+    }
+    .text-list {
+        width: 700%;
+    }
+    .slider-controls {
+        width: 160px;
+    }
+    .text:last-child {
+        margin-right: 50px;
+        transform: translate(-32%);
+    }
+    .text:nth-child(3) {
+        margin-right: 50px;
+        transform: translate(-58%);
+    }
+    .text:nth-child(2) {
+        margin-right: 50px;
+        transform: translate(-23%);
+    }
+
+
+}
